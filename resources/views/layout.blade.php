@@ -42,32 +42,13 @@
         <!-- Navbar content -->
 
         <ul>
-            <il><button id="status">=</button></il>
-            <il><button id="delete">-</button></il>
-            <il><button id="add">+</button></il>
+            <li><button id="status">=</button></li>
+            <li><button id="delete">-</button></li>
+            <li><button id="add">+</button></li>
         </ul>
     </nav>
     <div id="queryDiv">
     @section('content')
-    <div id="toner-table-container">
-       <!--  <table class="toner-table">
-            <thead>
-                <tr>
-                    <th>Color</th>
-                    <th>Count</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($toners as $toner)
-                    <tr>
-                        <td>{{ $toner->color }}</td>
-                        <td>{{ $toner->count }}</td>
-                    </tr>
-                @endforeach
-            </tbody> -->
-        </table>
-    </div>
-@endsection
 
 
     </div>
