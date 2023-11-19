@@ -39,7 +39,6 @@
 
 
     </div>
-
     <nav class="navbar navbar-expand-sm bg-info navbar-dark text-center justify-content-center">
         <div class="container-fluid">
             <ul class="navbar-nav">
@@ -59,27 +58,25 @@
 
 
 
-    <div class="d-flex flex-row justify-content-center border border-info">
+    <div class="container-sm">
+    <form action="/action_page.php">
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Melyik nyomtatóhoz?:</label>
+                    <input type="email" class="form-control" id="email" placeholder="" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Milyen szín?</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="" name="pswd">
+                    <input type="hidden" class="form-control" id="pwd" placeholder="" name="pswd">
+                </div>
 
-        <div class="p-2 d-flex flex-column border border-primary text-center">Xerox régi
-            <div class="p-2" id="x0"></div>
-        </div>
+                <div class="mb-3">
+                    <label for="howmany" class="form-label">Mennyit?</label>
+                    <input type="number" class="form-control" id="pwd" placeholder="" name="pswd">
+                </div>
 
-        <div class="p-2 d-flex flex-column border border-primary text-center">Xerox új
-            <div class="p-2" id="x1"></div>
-        </div>
-
-        <div class="p-2 d-flex flex-column border border-primary text-center">HP 1
-            <div class="p-2" id="hp2"></div>
-        </div>
-
-        <div class="p-2 d-flex flex-column border border-primary text-center">HP 2
-            <div class="p-2" id="hp3"></div>
-        </div>
-
-
-
-
+                <button type="submit" class="btn btn-primary">Ment</button>
+            </form>
     </div>
     <footer class="bg-dark text-center text-white">
 

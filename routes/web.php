@@ -18,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/plus', function () {
+    return view('plus');
+});
+Route::get('/minus', function () {
+    return view('minus');
+});
 
 Route::get('printers', [PrinterController::class, 'allprinter']);
 Route::get('toners', [TonerController::class, 'alltoner']);

@@ -39,51 +39,52 @@
 
 
     </div>
+    <div class="">
+        <nav class="navbar navbar-expand-sm bg-info navbar-dark text-center justify-content-center">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/"><img src="https://icon-library.com/images/white-home-icon-png/white-home-icon-png-21.jpg" height="30"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="minus">Elvesz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="plus">Hozzáad</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <nav class="navbar navbar-expand-sm bg-info navbar-dark text-center justify-content-center">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="/"><img src="https://icon-library.com/images/white-home-icon-png/white-home-icon-png-21.jpg" height="30"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="minus">Elvesz</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="plus">Hozzáad</a>
-                </li>
 
-            </ul>
+
+        <div class="container-sm">
+            <div>
+            <form action="">
+                <div class="mb-3">
+                    <label for="whichType" class="form-label">Melyikből?</label>
+                    <input type="text" name="" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="whichColor" class="form-label">Szín?</label>
+                    <input type="text" name="" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="howMany" class="form-label">Mennyit?</label>
+                    <input type="text" name="" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Ment</button>
+
+            </form>
+
+
+
+
         </div>
-    </nav>
+        <footer class="bg-dark text-center text-white">
 
-
-
-    <div class="d-flex flex-row justify-content-center border border-info">
-
-        <div class="p-2 d-flex flex-column border border-primary text-center">Xerox régi
-            <div class="p-2" id="x0"></div>
-        </div>
-
-        <div class="p-2 d-flex flex-column border border-primary text-center">Xerox új
-            <div class="p-2" id="x1"></div>
-        </div>
-
-        <div class="p-2 d-flex flex-column border border-primary text-center">HP 1
-            <div class="p-2" id="hp2"></div>
-        </div>
-
-        <div class="p-2 d-flex flex-column border border-primary text-center">HP 2
-            <div class="p-2" id="hp3"></div>
-        </div>
-
-
-
-
-    </div>
-    <footer class="bg-dark text-center text-white">
-
-    </footer>
+        </footer>
 </body>
 
 </html>

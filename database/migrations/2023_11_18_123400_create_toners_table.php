@@ -7,27 +7,39 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
+    /*            if (item.color === 1) {
+                color = "Fekete";
+            } 
+            else if (item.color === 2) {
+                color = "Magenta";
+            } 
+            else if (item.color === 3) {
+                color = "Cián";
+            } 
+            else if (item.color === 4) {
+                color = "Sárga";
+            } 
+            else if (item.color === 5) {
+                color = "Hulladéktartály";
+            }  */
     public function up(): void
     {
         Schema::create('toners', function (Blueprint $table) {
             $table->id();
             $table->boolean('condition'); /*0-good 1-bad  */
-            $table->smallInteger('color'); /* 1-black 2-magenta 3-cian 4-yellow 5-wastage*/
+            $table->smallInteger('color');
             $table->smallInteger('type'); /* 1-xerox1 2-xerox2 3-hp1 4-hp2*/
             $table->timestamps();
         });
 
-        Toner::create(['condition'=>0,'color'=>1,'type'=>0]); 
-        Toner::create(['condition'=>0,'color'=>2,'type'=>0]); 
-        Toner::create(['condition'=>0,'color'=>3,'type'=>0]); 
-        Toner::create(['condition'=>0,'color'=>4,'type'=>0]);
-        Toner::create(['condition'=>0,'color'=>4,'type'=>0]);
-        Toner::create(['condition'=>0,'color'=>4,'type'=>0]);
-        Toner::create(['condition'=>0,'color'=>4,'type'=>0]);
-        Toner::create(['condition'=>0,'color'=>1,'type'=>1]); 
+        Toner::create(['condition' => 0, 'color' => 1, 'type' => 0]);
+        Toner::create(['condition' => 0, 'color' => 2, 'type' => 0]);
+        Toner::create(['condition' => 0, 'color' => 3, 'type' => 0]);
+        Toner::create(['condition' => 0, 'color' => 4, 'type' => 0]);
+        Toner::create(['condition' => 0, 'color' => 4, 'type' => 0]);
+        Toner::create(['condition' => 0, 'color' => 4, 'type' => 0]);
+        Toner::create(['condition' => 0, 'color' => 4, 'type' => 0]);
+        Toner::create(['condition' => 0, 'color' => 1, 'type' => 1]);
     }
 
     /**
